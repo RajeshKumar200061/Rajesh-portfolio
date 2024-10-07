@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajesh Dhiman Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href=".//media/rlogo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- header begin ---------------------->
+    <nav
+      class="navbar navbar-expand-lg position-fixed w-100 text-capitalize z-3"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fa-brands fa-r-project mx-1"></i>raj</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i
+            class="fa-solid fa-bars fa-lg icon-bar"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#staticBackdrop"
+            aria-controls="staticBackdrop"
+          >
+          </i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#"
+              ><span class="highlight">#</span>Home</a
+            >
+            <a class="nav-link" href="#work"
+              ><span class="highlight">#</span>Works</a
+            >
+            <a class="nav-link" href="#about-me"
+              ><span class="highlight">#</span>about-me</a
+            >
+            <a class="nav-link" href="#contact"
+              ><span class="highlight">#</span>contacts</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- aside -->
+    <aside>
+      <div
+        class="offcanvas offcanvas-end"
+        data-bs-backdrop="static"
+        tabindex="-1"
+        id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel"
+      >
+        <div
+          class="offcanvas-header justify-content-end align-items-center px-4"
+        >
+          <i
+            class="fa-solid fa-xmark fa-2xl closebtn"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <!-- <i class="fa-solid fa-xmark fa-xl closebtn"></i> -->
+          </i>
+        </div>
+        <div class="offcanvas-body display-5">
+          <a
+            class="nav-link"
+            aria-current="page"
+            href="https://www.youtube.com/results?search_query=how+to+auto+close+sidebar+when+click+on+home+button+in+bootstrap+5"
+            ><span class="highlight">#</span>Home</a
+          >
+          <br />
+          <a class="nav-link" href="#work"
+            ><span class="highlight">#</span>Works</a
+          >
+          <br />
+          <a class="nav-link" href="#about-me"
+            ><span class="highlight">#</span>about-me</a
+          >
+          <br />
+          <a class="nav-link" href="#contact"
+            ><span class="highlight">#</span>contacts</a
+          >
+        </div>
+      </div>
+    </aside>
+
+    <!-- aside -->
+    <!-- header end ------------------------>
+
+    <!-- secton 1  begin--------------------------- -->
+    <section class="main_section">
+      <div
+        class="verticle_line d-none d-md-none d-lg-none d-xl-block justify-content-end flex-column align-items-center"
+      ></div>
+      <div
+        class="links d-none d-md-none d-lg-none d-xl-block flex-column justify-content-center align-content-center"
+      >
+        <a href="#"
+          ><i class="fa-brands fa-github fa-xl" style="color: #abb2bf"></i
+        ></a>
+        <br />
+        <a
+          href="https://www.linkedin.com/in/rajesh-kumar-pb04062000/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin fa-xl" style="color: #abb2bf"></i
+        ></a>
+        <br />
+
+        <a href="./file/RAJESH WEB.pdf" download="RAJESH WEB.pdf"
+          ><i class="fa-solid fa-file fa-xl" style="color: #abb2bf"></i
+        ></a>
+      </div>
+
+      <div class="container hero1">
+        <div class="row gy-4">
+          <div
+            class="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column text-start"
+          >
+            <div class="container gx-0" style="height: 10vh">
+              <h1>Rajesh is a</h1>
+              <h1 id="typewriter" class="highlight"></h1>
+            </div>
+
+            <br />
+            <p class="fs-5">
+              He crafts responsive websites where technologies meet creativity
+            </p>
+            <div class="d-flex justify-content-start w-100">
+              <button type="button" class="btn text-center">
+                <a href="#contact">Contact me!!</a>
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column"
+          >
+            <figure>
+              <img
+                class="img-fluid"
+                src="./media/Group 46.png"
+                alt="boy logo"
+              />
+            </figure>
+
+            <div class="box d-flex align-items-center p-2">
+              <span class="minibox mx-2"></span>
+              <h3 class="p-0">
+                Design. <span class="highlight p-0">Create</span>. Inspire
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- quote ----------->
+        <div
+          class="row qoute_box py-5 my-5 d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="box p-3 py-4 text-center">
+            <h4>
+              Designing and Creativity takes
+              <span class="highlight">courage</span>.
+            </h4>
+          </div>
+          <div class="rectangle d-none d-md-none d-lg-none d-xl-block"></div>
+          <div class="box box-name w-25 text-center p-3 py-4 my-auto">
+            <h4>"Steve Jobs"</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 1 end]-------------------------- -->
+
+    <!-- section 2 start ------------------------------------->
+    <section>
+      <div class="container" id="work">
+        <!-- head -->
+        <div class="row">
+          <div class="col d-flex align-items-center">
+            <h2><span class="highlight">#</span>Projects</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+        <!-- head -->
+        <!-- cards section begin ----------------------->
+        <div class="row gy-4 py-5">
+          <div class="col-12 col-sm-12 col-lg-4">
+            <div class="card no-radius cus-card justify-content-center w-100">
+              <img
+                src="./media/netflix.jpg"
+                class="card-img-top img-fluid no-radius"
+                alt="Netflix"
+              />
+              <div class="card-body card-box p-0">
+                <h5 class="card-title border-bottom p-2">NetFlix Clone</h5>
+
+                <h6 class="p-2">Technologies Used</h6>
+
+                <p class="card-text p-2">HTML5, CSS3, JavaScript</p>
+              </div>
+              <div class="card-body">
+                <a href="https://rajeshkumar200061.github.io/Netflix/"
+                  ><button type="button" class="btn text-center">
+                    Live <~>
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-lg-4 pe-auto">
+            <div class="card no-radius cus-card justify-content-center w-100">
+              <img
+                src="./media/pexels-pixabay-358636.jpg"
+                class="card-img-top img-fluid no-radius"
+                alt="Netflix"
+              />
+              <div class="card-body card-box">
+                <h5 class="card-title border-bottom p-2">Get Prop</h5>
+
+                <h6 class="p-2">Technologies Used</h6>
+
+                <p class="card-text p-2">HTML5, CSS3, JavaScript</p>
+              </div>
+              <div class="card-body">
+                <a
+                  href="https://rajeshkumar200061.github.io/GetProp/"
+                  target="_blank"
+                >
+                  <button type="button" class="btn text-center">
+                    Live <~>
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="rectangle_2 d-none d-md-none d-lg-none d-xl-block"></div>
+
+          <div class="col-12 col-sm-12 col-lg-4">
+            <div
+              class="card no-radius cus-card justify-content-center w-100 card-box"
+            >
+              <img
+                src="./media/pexels-danny-meneses-340146-943096.jpg"
+                class="card-img-top img-fluid no-radius"
+                alt="Netflix"
+              />
+              <div class="card-body p-0 card-box">
+                <h5 class="card-title border-bottom p-2">Raw Website design</h5>
+
+                <h6 class="p-2">Technologies Used</h6>
+
+                <p class="card-text p-2">HTML5, CSS3, JavaScript</p>
+              </div>
+              <div class="card-body">
+                <button type="button" class="btn text-center">Live <~></button>
+              </div>
+            </div>
+          </div>
+          <!-- cards section end ------------------------------------->
+        </div>
+      </div>
+    </section>
+    <!-- section 2 End ------------------------------------>
+
+    <!-- section 3 begin  ----------------------------------->
+
+    <section>
+      <div class="container">
+        <!-- head -->
+        <div class="row gy-4">
+          <div class="col d-flex align-items-center">
+            <h2><span class="highlight">#</span>Skills</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+        <!-- head -->
+        <!-- right side skills section--------------------- -->
+        <div class="row py-5 gy-4">
+          <div
+            class="col-12 col-sm-12 col-md-12 col-lg-6 py-3 text-center d-flex align-items-lg-center justify-content-center"
+          >
+            <picture
+              ><img src="./media/Group 36.png" alt="img" class="img-fluid"
+            /></picture>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 px-5">
+            <div class="row gy-4 d-flex">
+              <div class="col-12 col-sm-12 col-lg-6 col-xl-4">
+                <div class="card-box">
+                  <h5 class="p-2">Languages</h5>
+                  <div class="card-box">
+                    <p class="p-2">HTML5, CSS3, JavaScript</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-12 col-lg-6 col-xl-4">
+                <div class="card-box">
+                  <h5 class="p-2">Tools</h5>
+                  <div class="card-box">
+                    <p class="p-2">Visual Studio code, Git, Github</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-12 col-lg-12 col-xl-4">
+                <div class="card-box">
+                  <h5 class="p-2">Design Tools</h5>
+                  <div class="card-box">
+                    <p class="p-2">Adove Photoshop, Figma</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ---------------2nd row------- ------------------>
+            <div class="row gy-4 mt-0 d-flex my-4 my-sm-0 my-md-0">
+              <div class="col-12 col-sm-12 col-lg-6 d-lg-none col-xl-6"></div>
+              <div class="col-12 col-sm-12 col-lg-6">
+                <div class="card-box">
+                  <h5 class="p-2">Frameworks</h5>
+                  <div class="card-box">
+                    <p class="p-2">React JS, Bootstrap, tailwind CSS</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-12 col-lg-6 col-xl-6">
+                <div class="card-box">
+                  <h5 class="p-2">Others</h5>
+                  <div class="card-box">
+                    <p class="p-2">
+                      Strong Communication, Attension to detail, Team
+                      collaboration
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 3 end ---------------------------------------->
+    <!-- section 4 begin  ----------------------------------------------------->
+
+    <section>
+      <div class="container py-5" id="about-me">
+        <!-- head -->
+        <div class="row">
+          <div class="col d-flex align-items-center">
+            <h2><span class="highlight">#</span>About-me</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+        <!-- head -->
+
+        <div class="row">
+          <!-- myself -->
+
+          <div class="col-12 col-sm-12 col-lg-6 py-5">
+            <p>Hello, i'm Rajesh!!</p>
+            <br />
+            <p>
+              I’m a self-taught front-end developer based in Punjab, India. I
+              can develop responsive websites from scratch and raise them into
+              modern user-friendly web experiences.
+            </p>
+            <br />
+            <p>
+              Transforming my creativity and knowledge into a websites has been
+              my passion for over a year.I always strive to learn about the
+              newest technologies and frameworks.
+            </p>
+
+            <br />
+            <button class="btn">
+              Read More <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <!-- end -->
+          <div
+            class="col-12 col-sm-12 col-lg-6 d-flex justify-content-center align-items-center"
+          >
+            <figure>
+              <img src="./media/Group 50.png" alt="boylogo" class="img-fluid" />
+            </figure>
+            <div class="dots d-none d-md-none d-lg-none d-xl-block">
+              <img src="./media/Frame 31.png" alt="dots" />
+            </div>
+            <div
+              class="rectangle_3 d-none d-md-none d-lg-none d-xl-block"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 4 end -------------------------------------------------------->
+
+    <!-- section 5 start --------------------------------------------------------->
+    <!-- contact -->
+    <section>
+      <div class="container" id="contact">
+        <!-- head -->
+        <div class="row">
+          <div class="dots_2 d-none d-md-none d-lg-none d-xl-block">
+            <img src="./media/Frame 36.png" class="img-fluid" alt="dots" />
+          </div>
+          <div class="col d-flex align-items-center">
+            <h2><span class="highlight">#</span>Contacts</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+        <!-- head -->
+        <div class="row gy-4 py-5">
+          <div class="col-12 col-sm-12 col-lg-6">
+            <p>
+              Web designer with experience in designing, building, and managing
+              aesthetically pleasing and user-friendly websites. Adept at using
+              contemporary web design tools and technologies, including
+              JavaScript, HTML, and CSS. Adept at creating interactive and
+              responsive designs and has a solid grasp of user experience (UX)
+              concepts. Proven ability to solve design difficulties with both an
+              analytical and creative perspective. Notable advancements comprise
+              augmenting the usability of websites and elevating user engagement
+              in general.
+            </p>
+          </div>
+          <div
+            class="col-12 col-sm-12 col-lg-6 d-flex justify-content-end justify-content-lg-end justify-content-xl-end align-items-start flex-column align-items-lg-end align-items-xl-end"
+          >
+            <div class="card-box p-4">
+              <h5>Message me here</h5>
+              <br />
+              <p>
+                <i
+                  class="fa-solid fa-envelope fa-xl"
+                  style="color: #abb2bf; margin-right: 1rem"
+                ></i
+                >dhimanraj457@gmail.com
+              </p>
+              <p>
+                <i
+                  class="fa-brands fa-instagram fa-xl"
+                  style="color: #abb2bf; margin-right: 1rem"
+                ></i
+                >_ig__dhiman14_
+              </p>
+              <p>
+                <i
+                  class="fa-brands fa-whatsapp fa-xl"
+                  style="color: #abb2bf; margin-right: 1rem"
+                ></i
+                >+91-73475-13761
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 5 end --------------------------------------------------------->
+
+    <!-- section 6 begin -->
+
+    <section>
+      <div class="container py-5">
+        <div class="row gy-4">
+          <div class="col-12 col-sm-12 col-lg-6">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  ><h5>Your Name</h5></label
+                >
+                <input type="text" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  ><h5>Email</h5></label
+                >
+                <input type="email" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  ><h5>Massege</h5></label
+                >
+                <input type="text" class="form-control" />
+              </div>
+              <div class="text-start">
+                <button type="submit" class="btn"><h6>Submit</h6></button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-12 col-sm-12 col-lg-6 ">
+            <!--  -->
+<div class="row gy-4">
+  <div class=" col-12 col-sm-12 col-lg-6 col-xl-6 ">
+    <div class="card-box p-3 ">
+      <h5>Mechanical  Engineer by study..</h5>
+      </div>
+  </div>
+  <div class="col-12 col-sm-12 col-lg-6 col-xl-6 ">
+    <div class="card-box p-3">
+      <h5>
+        Front-end Developer by Profession..
+      </h5>
+  </div>
+</div>
+</div>
+<!--  -->
+
+<div class="row py-5">
+  <div class="col-12 d-flex justify-content-center align-content-center ">
+ 
+    <a href="./file/RAJESH WEB.pdf" download="./file/RAJESH WEB.pdf" class="btn"> Download CV</a>
+  
+  </div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 6 end -->
+
+    <!-- footer begin -------->
+
+    <footer>
+      <div class="hr"></div>
+      <div class="container py-5">
+        <div class="row g-0">
+          <div class="col-12 col-sm-12 col-lg-6">
+            <div class="d-flex flex-column w-100">
+              <h5><i class="fa-brands fa-r-project mx-1"></i>Raj</h5>
+              <br />
+              <p>dhimanraj457@gmail.com</p>
+            </div>
+            <h6>Web designer and front-end developer</h6>
+          </div>
+
+          <div
+            class="col-12 col-sm-12 col-lg-6 d-flex align-items-start align-items-lg-end flex-column"
+          >
+            <div class="cont-box">
+              <h5>Media</h5>
+              <br />
+              <div class="col">
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-github fa-xl"
+                    style="color: #abb2bf; margin-right: 0.2rem"
+                  ></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/rajesh-kumar-pb04062000/"
+                  target="_blank"
+                  ><i
+                    class="fa-brands fa-linkedin fa-xl"
+                    style="color: #abb2bf; margin-right: 0.2rem"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-envelope fa-xl"
+                    style="color: #abb2bf; margin-right: 1rem"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row p-2">
+            <div class="col-12 text-center py-2">
+              <p>
+                <i class="fa-regular fa-copyright fa-2xs"></i> Copyright 2024 .
+                Made by Rajesh
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end --------->
+
+    <!-- script------------------------------------>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
