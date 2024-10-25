@@ -148,7 +148,7 @@
           <div
             class="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column text-start"
           >
-            <div class="container gx-0" style="height: 10vh">
+            <div class="container typewriter gx-0">
               <h1>Rajesh is a</h1>
               <h1 id="typewriter" class="highlight"></h1>
             </div>
@@ -164,11 +164,11 @@
             </div>
           </div>
           <div
-            class="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column"
+            class="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column hero1_img"
           >
             <figure>
               <img
-                class="img-fluid"
+                class="img-fluid  hero1_img "
                 src="./media/Group 46.png"
                 alt="boy logo"
               />
@@ -502,58 +502,50 @@
       <div class="container py-5">
         <div class="row gy-4">
           <div class="col-12 col-sm-12 col-lg-6">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
-                  ><h5>Your Name</h5></label
-                >
-                <input type="text" class="form-control" />
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
-                  ><h5>Email</h5></label
-                >
-                <input type="email" class="form-control" />
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
-                  ><h5>Massege</h5></label
-                >
-                <input type="text" class="form-control" />
-              </div>
-              <div class="text-start">
-                <button type="submit" class="btn"><h6>Submit</h6></button>
-              </div>
-            </form>
+            <div class="mb-3">
+              <input type="text" id="fullName" required class="form p-2" placeholder="Full Name" />
+            </div>
+            <div class="mb-3">
+              <input type="email" id="email_id" required class="form p-2" placeholder="Email Id" />
+            </div>
+            <div class="mb-3">
+              <textarea id="message"  class="form p-2 " cols="10" rows="5" placeholder="Message"></textarea>
+            </div>
+
+            <div class="text-start">
+              <button class="btn" onclick="sendMail()">Send</button>
+            </div>
           </div>
 
-          <div class="col-12 col-sm-12 col-lg-6 ">
+          <div class="col-12 col-sm-12 col-lg-6">
             <!--  -->
-<div class="row gy-4">
-  <div class=" col-12 col-sm-12 col-lg-6 col-xl-6 ">
-    <div class="card-box p-3 ">
-      <h5>Mechanical  Engineer by study..</h5>
-      </div>
-  </div>
-  <div class="col-12 col-sm-12 col-lg-6 col-xl-6 ">
-    <div class="card-box p-3">
-      <h5>
-        Front-end Developer by Profession..
-      </h5>
-  </div>
-</div>
-</div>
-<!--  -->
+            <div class="row gy-4">
+              <div class="col-12 col-sm-12 col-lg-6 col-xl-6">
+                <div class="card-box p-3">
+                  <h5>Mechanical Engineer by study..</h5>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-lg-6 col-xl-6">
+                <div class="card-box p-3">
+                  <h5>Front-end Developer by Profession..</h5>
+                </div>
+              </div>
+            </div>
+            <!--  -->
 
-<div class="row py-5">
-  <div class="col-12 d-flex justify-content-center align-content-center ">
- 
-    <a href="./file/RAJESH WEB.pdf" download="./file/RAJESH WEB.pdf" class="btn"> Download CV</a>
-  
-  </div>
-</div>
-
-
+            <div class="row py-5">
+              <div
+                class="col-12 d-flex justify-content-center align-content-center"
+              >
+                <a
+                  href="./file/RAJESH WEB.pdf"
+                  download="./file/RAJESH WEB.pdf"
+                  class="btn"
+                >
+                  Download CV</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -618,15 +610,30 @@
         </div>
       </div>
     </footer>
+
     <!-- footer end --------->
 
     <!-- script------------------------------------>
+    <script src="portfolio.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
 
-    <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <!-- email -->
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "HQ5D8ANKKnmsBNk1G",
+        });
+      })();
+    </script>
   </body>
 </html>

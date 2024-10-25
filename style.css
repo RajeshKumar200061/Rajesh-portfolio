@@ -266,6 +266,7 @@ background: var(--box-color);
   top: 70rem;
   
   }
+
   .rectangle_3{
     border: 1px solid var(--para-color);
     width:3%;
@@ -305,9 +306,26 @@ background: var(--box-color);
   .links a i{
     margin-bottom: 1.5rem;
   }
+
+  .typewriter{
+    height: 15vh;
+  }
 }
 
+/* form input */
 
+.form{
+  width: 80%;
+  border: var(--primary-color) 2px solid;
+  outline: none;
+}
+
+.btn:hover{
+background: var(--bg-color);
+color: var(--primary-color);
+ border-color: var(--font-color) ;
+  transition: all 200ms linear;
+}
 
 @media (max-width:1400px) {
   .rectangle{
@@ -368,6 +386,37 @@ background: var(--box-color);
   .links a i{
     margin-bottom: 1.5rem;
   }
+  .typewriter{
+    height: 15vh;
+  }
+
+}
+
+@media (max-width:1600px) {
+  .typewriter{
+    height: 18vh;
+   
+  }
+  
+}
+
+@media (max-width:768px) {
+
+  .hero1_img figure{
+    width: 50vw;
+  
+  }
+  .hero1_img img{
+    width: 100%;
+  }
+}
+
+@media (max-width:992px) {
+  .typewriter{
+    height: 16vh;
+   
+  }
+  
 }
 
 @media (max-width:576px) {
@@ -375,6 +424,9 @@ background: var(--box-color);
   .icon-bar{
     color: var(--font-color);
     display: flex;
+  }
+  .typewriter{
+    height: 15vh;
   }
 }
 

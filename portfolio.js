@@ -9,37 +9,16 @@ window.addEventListener("scroll", () => {
 
   } else if (window.scrollY < 56) {
     changeNav.classList.remove("navbar_scroll");
-    changeNav.classList.remove("navbar_scroll a");
-    changeNav.classList.remove("navbar_scroll ..icon-bar");
+    changeNav.classList.remove("navbar_scroll");
+    changeNav.classList.remove("navbar_scroll .icon-bar");
    
 
   }
 });
 
 
-// typewritter
-// const text = "Hello";  
-// let index = 0;  
 
-// function type() {  
-//     if (index < text.length) {  
-//         document.getElementById("typewriter").innerHTML += text.charAt(index);  
-//         index++;  
-      
-//         setTimeout(type, 1000); // Adjust speed by changing the timeout (milliseconds)  
-//     } else {  
-//         // Wait for a moment, then restart typing  
-//         setTimeout(restartTyping, 1000); // Pause before restarting (1 second)  
-//     }  
-// }  
 
-// function restartTyping() {  
-//     index = 0;  
-//     document.getElementById("typewriter-text").innerHTML = ""; // Clear previous text  
-//     type(); // Start typing again  
-// }  
-
-// window.onload = type;
 
 const textArray = [  
   "Web Designer" ,
@@ -73,3 +52,26 @@ function erase() {
 
 // Start the typing effect  
 type();
+
+
+
+// email
+
+
+
+function sendMail(){
+    
+  var params = {
+      from_name : document.getElementById("fullName").value,
+      email_id : document.getElementById("email_id").value,
+      message : document.getElementById("message").value,
+      // contact_no :document.getElementById("tel").value,
+  };
+
+  emailjs.send("service_q2z1vtf" , "template_w4plpgk" , params).then(function(res){
+      console.log("success", res.status);
+      alert("successfully sent the message!" )
+  }
+
+)
+    };
