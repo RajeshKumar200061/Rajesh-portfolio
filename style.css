@@ -430,7 +430,9 @@ color: var(--primary-color);
   }
 }
 
-
+.form{
+  width: 100%;
+}
 
 /* typewritter */
 #typewriter {  
